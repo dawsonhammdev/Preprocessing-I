@@ -70,11 +70,19 @@ body{
 	display: flex;
 	flex-direction: column;
 	width: 45%;
-	height: 100%;
+	height: auto;
 	background-color: #0C486B;
 	text-align: right;
 	padding-top: 5%;
 	padding-right: 2%;
+
+	@media ( max-width: 800px ){
+		width: 70%;
+	}//end of mq 800
+
+	@media ( max-width: 500px ){
+		width: 140%;
+	}//end of mq 500
 
 	h1{
 		color: @font-color;
@@ -82,10 +90,15 @@ body{
 		font-weight: 700;
 		font-size: 8rem;
 		margin-bottom: 5%;
+
+		@media ( max-width: 500px ){
+			font-size: 6rem;
+		}//end of mq 500
 	}//this is where the h1 styling ends
 
 	img{
 		width: 45px;
+		margin-top: -40%;
 	}//styling for span edns here
 
 	p{
@@ -93,17 +106,47 @@ body{
 		font-weight: 300;
 		font-family: @main-font;
 		font-size: 1rem;
+
+		@media ( max-width: 500px ){
+			font-size: .8rem;
+		}//end of mq 500
 	}//end of p stayling
 
 	.atr-block{
-		margin-bottom: 30%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+
+		img{
+			margin-top: -43%;
+
+			@media ( max-width: 800px ){
+				margin-top: -72%;
+			}//end of mq 800
+
+			@media ( max-width: 500px ){
+				margin-top: -115%;
+			}//end of mq 500
+
+		}//end of img
+
 	}//end of atr-block stylings
 
 }//this is where the styling ends for the blue section
 
+
+
 .ed-blue{
 	height: 15%;
-	margin-top: 10%;
+	margin-top:10%;
+
+	@media ( max-width: 800px ){
+		margin-top: 13%;
+	}//end of mq 800
+
+	@media ( max-width: 500px ){
+		margin-top: 11%;
+	}//end of mq 500
 
 	.p{
 		padding-top: 4%;
@@ -117,8 +160,16 @@ body{
 
 .exp-blue{
 	height: 65%;
-	margin-top: 10%;
+	margin-top: 7%;
 	margin-bottom: 10%;
+
+	@media ( max-width: 800px ){
+		margin-top: -4%;
+	}//end of mq 800
+
+	@media ( max-width: 500px ){
+		margin-top: -24%;
+	}//end of mq 500
 
 	.p{
 		padding-top: 4%;
@@ -131,12 +182,42 @@ body{
 	}//this is the end of p styling
 
 	.one, .two, .three{
-		height: 29%;
+		height: 22.3%;
 	}//this is the end of .one-three styling
 
+	.two{
+		@media ( max-width: 800px ){
+			margin-top: 9%;
+		}//end of mq 800
 
+		@media ( max-width: 500px ){
+			margin-top: 4%;
+		}//end of mq 500
+	}//end of two
+
+	.three{
+		margin-top: -5%;
+
+		@media ( max-width: 800px ){
+			margin-top: -10%;
+		}//end of mq 800
+
+		@media ( max-width: 500px ){
+			margin-top: -23%;
+		}//end of mq 500
+
+	}//end of three
+	
 
 }//the end of exp-blue styling
+
+
+
+
+
+
+
+
 
 .white{
 	display: flex;
@@ -146,13 +227,51 @@ body{
 
 	.atr-white{
 		display: flex;
-	}
+		justify-content: space-between;
+		width: 50%;
+		margin-bottom: 6%;
+
+		@media ( max-width: 500px ){
+			flex-direction: column;
+
+			h2{
+				margin-top: 20%;
+			}
+		}//end of mq 500
+
+		h2{
+			margin-bottom: 8%;
+		}//end of h2
+
+		li{
+			padding: 3% 0;
+
+			@media ( max-width: 500px ){
+				font-size: .8rem;
+			}//end of mq 500
+		}//end of li
+
+		a{
+			text-decoration: none;
+			color: #0C486B;
+			cursor: pointer;
+		}//end of a
+
+		@media ( max-width: 800px ){
+			width: 70%
+		}//end of mq 800
+
+	}//end of art-white class
 
 	h1{
 		color: #0C486B;
 		font-family: @main-font;
 		font-weight: 700;
 		font-size: 4rem;
+
+		@media ( max-width: 500px ){
+			font-size: 3rem;
+		}//end of mq 500
 	}//end of H1 styling
 
 	p{
@@ -160,6 +279,10 @@ body{
 		font-weight: 300;
 		font-family: @main-font;
 		font-size: 1rem;
+
+		@media ( max-width: 500px ){
+			font-size: .8rem;
+		}//end of mq 500
 	}//end of p text styling
 
 	.subname{
@@ -201,11 +324,29 @@ body{
 
 	p{
 		margin-bottom: 5%;
-	}
+		
+	}//the end of p styling
 
-}
+}//edn of edu-white styling
 
+.exp-white{
+	margin-right:30%;
+	h3{
+		margin-top: 3%;
+		margin-bottom:1%;
+	}//end of h2
 
+	p{
+		line-height: 140%;
+	}//end of p
+}//end of exp-white
+
+.SLED{
+	margin-bottom: 6.2%;
+	h3{ 
+		margin-top: 5%;
+	}//end of p
+}//end of sled
 
 
 
