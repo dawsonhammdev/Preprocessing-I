@@ -53,9 +53,11 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+body{
+	display: flex;
 }
+
+
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap');
 
@@ -67,8 +69,8 @@ html, body {
 .blue{
 	display: flex;
 	flex-direction: column;
-	width: 30%;
-	height: 100vh;
+	width: 45%;
+	height: 100%;
 	background-color: #0C486B;
 	text-align: right;
 	padding-top: 5%;
@@ -79,6 +81,7 @@ html, body {
 		font-family: @main-font;
 		font-weight: 700;
 		font-size: 8rem;
+		margin-bottom: 5%;
 	}//this is where the h1 styling ends
 
 	img{
@@ -92,6 +95,10 @@ html, body {
 		font-size: 1rem;
 	}//end of p stayling
 
+	.atr-block{
+		margin-bottom: 30%;
+	}//end of atr-block stylings
+
 }//this is where the styling ends for the blue section
 
 .ed-blue{
@@ -100,12 +107,106 @@ html, body {
 
 	.p{
 		padding-top: 4%;
-	}
+	}//this is the end of the p class styling
 
 	p{
 		line-height: 55%;
-	}
+	}//this is the end of the p styling
+
 }//end of ed-blue styling
+
+.exp-blue{
+	height: 65%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+
+	.p{
+		padding-top: 4%;
+		height: 10%;
+		padding: 5% 0;
+	}// this is the end of .p styling
+
+	p{
+		line-height: 55%;
+	}//this is the end of p styling
+
+	.one, .two, .three{
+		height: 29%;
+	}//this is the end of .one-three styling
+
+
+
+}//the end of exp-blue styling
+
+.white{
+	display: flex;
+	flex-direction: column;
+	padding-top: 5.6%;
+	padding-left: 2%;
+
+	.atr-white{
+		display: flex;
+	}
+
+	h1{
+		color: #0C486B;
+		font-family: @main-font;
+		font-weight: 700;
+		font-size: 4rem;
+	}//end of H1 styling
+
+	p{
+		color: #8A9998;
+		font-weight: 300;
+		font-family: @main-font;
+		font-size: 1rem;
+	}//end of p text styling
+
+	.subname{
+		color: #8A9998;
+		font-weight: 300;
+		font-family: @main-font;
+	}//end of subname text styling
+
+	h2{
+		color: #0C486B;
+		font-weight: 700;
+		font-family: @main-font;
+	}//end of h2 styling
+
+	h3{
+		color: #8A9998;
+		font-weight: 700;
+		font-family: @main-font;
+	}//end of h3 styling
+
+	li{
+		color: #8A9998;
+		font-weight:300;
+		font-family: @main-font;
+	}//end of li styling
+
+	
+
+}//end of white section styling
+
+.name{
+	margin-bottom: 5%;
+}//end of name class styling
+
+.edu-white{
+	h2{
+		margin-bottom: 2.5%;
+	}//end of h2 styling
+
+	p{
+		margin-bottom: 5%;
+	}
+
+}
+
+
+
 
 
 
